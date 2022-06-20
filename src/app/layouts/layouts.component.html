@@ -1,0 +1,25 @@
+
+<mat-drawer-container  [hasBackdrop]="hasBackdrop">
+
+    <mat-drawer #drawer [mode]="mode">
+        <app-navbar></app-navbar>
+    </mat-drawer>
+    <mat-drawer-content >
+        <mat-grid-list class="gradient-cardd" cols="4" rowHeight="70px">    
+            <mat-grid-tile>
+                <a (click)="drawer.toggle()" type="button"><i class="bi bi-list mx-5" style="font-size: 30px;"></i></a>
+                <div class="input-group rounded">
+            </div>
+            </mat-grid-tile>
+            <mat-grid-tile> <input type="search" class="form-control rounded mt-2" placeholder="Search" aria-label="Search" aria-describedby="search-addon" /> </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>
+            <a type="button"><i class="bi bi-chat-heart-fill mx-3"  style="font-size: 30px;"></i></a>
+            <a type="button"><i class="bi bi-gear-fill"  style="font-size: 30px;"></i></a>  
+            </mat-grid-tile>
+        </mat-grid-list>
+        <router-outlet  ></router-outlet>  
+    </mat-drawer-content>
+  </mat-drawer-container>
+ 
+  

@@ -1,0 +1,11 @@
+.b-image {
+    width: 60%;
+    margin-left: 20%;
+}
+.mask-image {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.image-avatar {
+    height: 100%;
+}
